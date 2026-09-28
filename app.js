@@ -53,6 +53,8 @@
           <div><span>${esc(x.label)}${x.note ? `<br><small class="mute">${esc(x.note)}</small>` : ""}</span>
           <b class="price">${rp(x.value)}</b></div>`).join("")}</div>
         <p>${esc(p.description)}</p>
+        ${Object.entries(p.lists || {}).map(([t, items]) =>
+          `<h4>${esc(t)}</h4><ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`).join("")}
         <table>${Object.entries(p.specs || {}).map(([k, v]) =>
           `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join("")}</table>
         ${p.status === "terjual" ? "" :

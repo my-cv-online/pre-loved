@@ -8,7 +8,7 @@
  *
  * status: "tersedia" | "dipesan" | "terjual"
  */
-const WA_NUMBER = "6281234567890"; // ganti dengan nomor WhatsApp penjual (format 62...)
+const WA_NUMBER = "6281227188600"; // ganti dengan nomor WhatsApp penjual (format 62...)
 
 const dummy = (text, bg) =>
   `https://placehold.co/800x600/${bg}/ffffff?text=${encodeURIComponent(text)}`;
@@ -16,15 +16,15 @@ const dummy = (text, bg) =>
 const PRODUCTS = [
   {
     id: "rumah",
-    name: "Rumah Tipe 45 — Perumahan Asri",
+    name: "Rumah Tipe 36/60 — Perumahan Cluster Orchidea",
     category: "Properti",
     condition: "Terawat",
     status: "tersedia",
-    location: "Bekasi, Jawa Barat",
+    location: "Karawang, Jawa Barat",
     prices: [
       { label: "Jual Cash", value: 450000000 },
-      { label: "Take Over", value: 120000000, note: "sisa cicilan 3,2 jt/bln, 8 thn" },
-      { label: "Dikontrakan", value: 25000000, note: "per tahun" },
+      { label: "Take Over", value: 120000000, note: "sisa cicilan 3,5 jt/bln, 13 thn" },
+      { label: "Dikontrakan", value: 15000000, note: "per tahun" },
     ],
     photos: [
       dummy("Rumah - Depan", "8d6e63"),
@@ -33,16 +33,32 @@ const PRODUCTS = [
       dummy("Rumah - Dapur", "6d4c41"),
     ],
     specs: {
-      "Luas Tanah": "72 m²",
-      "Luas Bangunan": "45 m²",
+      "Luas Tanah": "60 m²",
+      "Luas Bangunan": "36 m²",
       "Kamar Tidur": "2",
       "Kamar Mandi": "1",
       "Listrik": "1300 VA",
-      "Air": "PAM",
+      "Air": "PDAM",
       "Sertifikat": "SHM",
     },
+    // Daftar tambahan (opsional) — tampil sebagai poin-poin di halaman detail
+    lists: {
+      "Fasilitas Perumahan": [
+        "Musholla",
+        "Lapangan badminton",
+        "Kolam renang",
+        "One gate system",
+        "Petugas kebersihan",
+      ],
+      "Lokasi Strategis": [
+        "Berada di kawasan 3 Bisnis Centre",
+        "Dekat RS Islam",
+        "Dekat SMKN 1 Karawang",
+        "Dekat Kampus Horizon",
+      ],
+    },
     description:
-      "Rumah siap huni di lingkungan tenang, dekat sekolah, pasar, dan akses tol. Bisa dibeli cash, take over KPR, atau dikontrakan tahunan. Harga masih bisa nego.",
+      "Rumah siap huni di Perumahan Cluster Orchidea, Karawang — lingkungan tenang dan aman dengan one gate system, berada di kawasan 3 Bisnis Centre serta dekat RS Islam, SMKN 1 Karawang, dan Kampus Horizon. Bisa dibeli cash, take over KPR, atau dikontrakan tahunan. Harga masih bisa nego.",
   },
   {
     id: "mesin-cuci",
