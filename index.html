@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pre-Loved — Barang Bekas Berkualitas</title>
+<meta name="description" content="Jual barang bekas berkualitas: rumah, mesin cuci, kulkas, kasur, kompor, tabung gas LPG.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Pre&#8209;Loved</h1>
+    <p>Barang bekas berkualitas, harga bersahabat.</p>
+    <input id="q" type="search" placeholder="Cari barang…" aria-label="Cari barang">
+    <nav id="cats" aria-label="Kategori"></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="grid" class="grid"></div>
+  <p id="empty" hidden>Barang tidak ditemukan.</p>
+</main>
+
+<dialog id="modal">
+  <button class="close" aria-label="Tutup">&times;</button>
+  <div id="detail"></div>
+</dialog>
+
+<footer class="wrap">© <span id="yr"></span> Pre-Loved · Hubungi via WhatsApp untuk tanya &amp; nego.</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
